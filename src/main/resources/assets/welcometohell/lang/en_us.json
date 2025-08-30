@@ -1,0 +1,13 @@
+{
+  "itemGroup.welcometohell": "Example Mod Tab",
+  "block.welcometohell.example_block": "Example Block",
+  "item.welcometohell.example_item": "Example Item",
+
+  "welcometohell.configuration.title": "Welcome to Hell Configs",
+  "welcometohell.configuration.section.welcometohell.common.toml": "Welcome to Hell Configs",
+  "welcometohell.configuration.section.welcometohell.common.toml.title": "Welcome to Hell Configs",
+  "welcometohell.configuration.items": "Item List",
+  "welcometohell.configuration.logDirtBlock": "Log Dirt Block",
+  "welcometohell.configuration.magicNumberIntroduction": "Magic Number Text",
+  "welcometohell.configuration.magicNumber": "Magic Number"
+}
