@@ -1,7 +1,8 @@
 {
   "itemGroup.welcometohell": "Example Mod Tab",
   "block.welcometohell.example_block": "Example Block",
-  "item.welcometohell.example_item": "Example Item",
+  "item.welcometohell.demonite": "Demonite",
+  "item.welcometohell.raw_demonite": "Raw Demonite",
 
   "welcometohell.configuration.title": "Welcome to Hell Configs",
   "welcometohell.configuration.section.welcometohell.common.toml": "Welcome to Hell Configs",
