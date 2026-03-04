@@ -1,5 +1,7 @@
 package net.notpaschkim.welcome_to_hell;
 
+import net.minecraft.world.level.ItemLike;
+import net.notpaschkim.welcome_to_hell.block.Modblocks;
 import net.notpaschkim.welcome_to_hell.item.ModItems;
 import org.slf4j.Logger;
 
@@ -30,6 +32,8 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import static net.notpaschkim.welcome_to_hell.block.Modblocks.DEMONITE_BLOCK;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(WelcometoHell.MODID)
@@ -82,8 +86,7 @@ public class WelcometoHell {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
-        ModItems.register(modEventBus);
-
+        //Modblocks.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -110,6 +113,9 @@ public class WelcometoHell {
             event.accept(ModItems.DEMONITE);
             event.accept(ModItems.RAW_DEMONITE);
                 }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept((ItemLike) DEMONITE_BLOCK);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
